@@ -1,4 +1,2 @@
-nordic
-======
-
-Basekit Standard Template
+Project
+========
