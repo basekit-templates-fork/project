@@ -1452,7 +1452,8 @@ hr.line {
 
 // Fields and buttons within columns
 @media screen and (max-width: 1200px) {
-	[class*="columns-three"] {
+	[class*="columns-three"],
+	[class*="columns-four"] {
 		.widget.blogsearch input,
 		.widget.signupform fieldset input,
 		.widget.profile form input {
@@ -1467,6 +1468,24 @@ hr.line {
 		}
 	}
 }
+
+@media screen and (max-width: 640px) {
+	[class*="columns-two"] {
+		.widget.blogsearch input,
+		.widget.signupform fieldset input,
+		.widget.profile form input {
+			width: 100%;
+		}
+		.widget.blogsearch button,
+		.widget.ecombasket .ecombasket-pull,
+		.widget.signupform fieldset button,
+		.widget.profile form button {
+			margin-left: 0;
+			margin-top: 6px;
+		}
+	}
+}
+
 
 /* Scrollbars */
 
