@@ -1065,6 +1065,7 @@ textarea {
             fieldset input {
 				background-color: lighten(@color-swatch1, 20%);
                 border: 1px solid darken(@color-swatch7, 2%);
+                height: auto;
                 @media @mobile {
                 	width: 65%;
                 }
@@ -1127,8 +1128,10 @@ textarea {
 }
 
 .widget.blogsearch button,
-.widget.ecombasket .ecombasket-pull {
-	padding: 7px 14px 7px;
+.widget.ecombasket .ecombasket-pull,
+.widget.signupform fieldset button,
+.widget.profile form button {
+	padding: 7px 14px 8px;
 	font-size: @font-swatch7-font-size;
 	line-height: @font-swatch7-line-height;
 	margin-left: 10px;
@@ -1422,7 +1425,7 @@ hr.line {
 	}
 }
 
-// // Click to call widget tablet/mobile styles
+// Click to call widget tablet/mobile styles
 @media @tablet {
   .clicktocall a {
     color: @color-swatch1;
